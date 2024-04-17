@@ -46,47 +46,49 @@ Table of Contents
     
 Introduction:
 
-Netflix has a vast collection of movies and TV shows, making it challenging for users to find something to watch. To address this issue, we developed a recommendation system that suggests movies to users based on their historical ratings and the ratings of similar users. The system employs Singular Value Decomposition (SVD) algorithm, a collaborative filtering technique, to predict user ratings for movies.
+    Netflix has a vast collection of movies and TV shows, making it challenging for users to find something to watch. To address this issue, we developed a recommendation system that suggests movies to users based on their historical ratings and the ratings of similar users. The system employs Singular Value Decomposition (SVD) algorithm, a collaborative filtering technique, to predict user ratings for movies.
 
 Dataset:
-
-The dataset used in this project is a subset of the Netflix Prize dataset, containing ratings given by users to different movies. It consists of three columns: Customer ID, Movie ID, and Rating.
+    
+    The dataset used in this project is a subset of the Netflix Prize dataset, containing ratings given by users to different movies. It consists of three columns: Customer ID, Movie ID, and Rating.
 
 Data Preprocessing:
-
-Before training the model, we performed several data preprocessing steps, including handling missing values, removing inactive users and less frequently rated movies, and creating a ratings matrix.
+    
+    Before training the model, we performed several data preprocessing steps, including handling missing values, removing inactive users and less frequently rated movies, and creating a ratings matrix.
 
 Model Training:
-
-We trained the recommendation model using the Surprise library, which offers various collaborative filtering algorithms. We chose the SVD algorithm for its effectiveness in handling sparse matrices and its ability to capture latent factors underlying user preferences.
-
+    
+    We trained the recommendation model using the Surprise library, which offers various collaborative filtering algorithms. We chose the SVD algorithm for its effectiveness in handling sparse matrices and its ability to capture latent factors underlying user preferences.
+    
 Evaluation:
-
-To evaluate the performance of our model, we used cross-validation and computed the Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE). These metrics provide insights into how well the model predicts user ratings compared to the actual ratings.
+    
+    To evaluate the performance of our model, we used cross-validation and computed the Root Mean Squared Error (RMSE) and Mean Absolute Error (MAE). These metrics provide insights into how well the model predicts user ratings compared to the actual ratings.
 
 Recommendations:
-
-After training the model, we generated recommendations for users based on their historical ratings. The recommendations are sorted in descending order of predicted ratings, and the top recommendations are displayed for each user.
+    
+    After training the model, we generated recommendations for users based on their historical ratings. The recommendations are sorted in descending order of predicted ratings, and the top recommendations are displayed for each user.
 
 Dependencies:
 
-The following Python libraries are required to run the code:
+   The following Python libraries are required to run the code:
 
-pandas
-numpy
-matplotlib
-scikit-surprise
+   pandas
+   numpy
+   matplotlib
+   scikit-surprise
+   
 You can install the required dependencies using pip:
-  pip install pandas numpy matplotlib scikit-surprise
+
+    pip install pandas numpy matplotlib scikit-surprise
 
   
 Usage:
 
-To use the recommendation system:
-
-Clone the repository to your local machine.
-Open the Jupyter Notebook Netflix_Recommendation.ipynb.
-Run each cell in the notebook sequentially to preprocess the data, train the model, and generate recommendations.
+    To use the recommendation system:
+    
+    Clone the repository to your local machine.
+    Open the Jupyter Notebook Netflix_Recommendation.ipynb.
+    Run each cell in the notebook sequentially to preprocess the data, train the model, and generate recommendations.
 
 Contributing:
 
