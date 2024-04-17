@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 # Reading dataset file
-dataset = pd.read_csv('E:/AIML_Projects/Netflix/combined_data_1.txt', header=None, names=['Cust_Id', 'Rating'],usecols=[0, 1])
+dataset = pd.read_csv('E:/AIML_Projects/Netflix/combined_data_2.txt', header=None, names=['Cust_Id', 'Rating'],usecols=[0, 1])
 # not named---->we are naming the columns
 
 # Convert Ratings column to a float
